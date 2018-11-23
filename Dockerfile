@@ -11,7 +11,7 @@ RUN	apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 
-# ADD kea-dhcp4.conf /etc/kea/kea-dhcp4.conf
+ADD kea-dhcp4.conf /etc/kea/kea-dhcp4.conf
 
 # RUN	echo 'type = "console";' > /etc/rspamd/override.d/logging.inc \
 #     && echo 'bind_socket = "*:11334";' > /etc/rspamd/override.d/worker-controller.inc \
